@@ -8,8 +8,7 @@
 }
 
 body {
-    background-image: url();
-    background-position: center;
+    background: url(../img/image2.jpg) center center;
     background-size: cover;
 }
 
@@ -24,4 +23,65 @@ button {
     justify-content: center;
     align-items: center;
     transition: 0.4s;
+}
+
+button:hover {
+    background-color: #102f5e;
+    color: #FFF;
+}
+
+button:hover > i {
+    color: #FFF;
+}
+
+button i {
+    color: #102f5e;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+input, select {
+    padding: 0.25rem 0.25rem;
+}
+
+.hide {
+    display: none;
+}
+
+/* ToDo header */
+.todo-container{
+    max-width: 450px;
+    margin: 3rem auto;
+    background-color: #fdfdfd;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.todo-container header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #CCC;
+}
+
+/* ToDo Form */
+#todo-form, #edit-form{
+    padding: 1rem;
+    border-bottom: 1px solid #CCC;
+}
+
+#todo-form p, #edit-form p{
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    margin-right: .3rem;
+}
+
+#cancel-edit-btn {
+    margin-top: 1rem;
 }
